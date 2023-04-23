@@ -28,14 +28,21 @@
 // element2.style.fontWeight = "normal";
 // document.querySelector("#content").appendChild(element2)
 
-// import heading from './mainPage'
-import {heading, articleHeading, image, article} from './mainPage';
+/* 
+
+start of code
+
+*/
+
+import {mainPage} from './mainPage';
+import { navBar } from './navBar';
 
 
 function writeToPage(component) {
-    const element = document.createElement('div');
-    element.textContent = component;
-    return element;    
+    const content = document.querySelector("#content");
+
+    console.log(component())
+    content.appendChild(component())
 }
 
 function drawToPage(component){
@@ -44,11 +51,14 @@ function drawToPage(component){
     return element;    
 }
 
-const content = document.querySelector("#content");
 
-content.appendChild(writeToPage(heading()))
-content.appendChild(writeToPage(articleHeading()))
-content.appendChild(writeToPage(article()))
+writeToPage(mainPage);
+
+
+// content.appendChild(writeToPage(navBar()))
+
+// content.appendChild(writeToPage(articleHeading()))
+// content.appendChild(writeToPage(article()))
 // content.appendChild(drawToPage(image()))
 
 

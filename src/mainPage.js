@@ -1,17 +1,20 @@
-const heading = () => {
-    // console.log('this is from the mainPage')
-    // const logo = document.createElement('div');
-    return "HuskyLand Restaurant"
-    // logo.style.fontSize = "xx-large";
-    // logo.style.fontWeight = "bold";
-}
+const mainPage = () => {
+    const container = document.createElement('div');
+    
+    const heading = document.createElement('div');
+    heading.textContent = "HuskyLand Restaurant";
 
-const articleHeading = () => {
-    return "Open for Business"
-}
+    const articleHeading = document.createElement('div');
+    articleHeading.textContent = "Open for Business";
 
-const article = () => {
-    return "Husky Land is the best restuarant for dogs and some people. All dogs deserve to eat at the finest restaurant and that place is called Husky Land. "
+    const article = document.createElement('div');
+    article.textContent = "Husky Land is the best restuarant for dogs and some people. All dogs deserve to eat at the finest restaurant and that place is called Husky Land. "
+    
+    container.appendChild(heading)
+    container.appendChild(articleHeading)
+    container.appendChild(article)
+
+    return container
 }
 
 const image = () => {
@@ -19,10 +22,8 @@ const image = () => {
 }
 
 export {
-    heading,
-    articleHeading, 
     image,
-    article,
+    mainPage,
   };
 
 
