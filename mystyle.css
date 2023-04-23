@@ -7,25 +7,18 @@ body {
 
 
 #content{
-    /* display: grid; 
-    flex-direction: column;
-    justify-content: center;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; */
-
     width: 75%;
     height: 100vh;
     background-color: #EFF8E2;
 }
 
-.tabs{
+.navBar{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.tabs div{
+.navBar div{
     display: flex;
     justify-content: center;
     align-items: center;
