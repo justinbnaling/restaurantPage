@@ -1,28 +1,49 @@
 body {
     margin: 0px;
-    display: flex;
+    /* display: flex;
     background-color: #23022e;
-    justify-content: center;
+    justify-content: center; */
 }
 
 
-#content{
+/* #content{
     width: 75%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #EFF8E2;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px black solid;
+    align-items: center;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header .title{
+    /* align-items: center; */
+    border: 1px black solid;
+    font-size: x-large;
 }
 
 .navBar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 10px;
 }
 
-.navBar div{
+/* .navBar div{
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px black solid;
-    height: 50px;
+} */
+
+/* .navBar a{
+    color: red;
     width: 100px;
-}
+    height: 100px;
+    /* border: 1px black solid; */
+} */

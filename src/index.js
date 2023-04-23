@@ -57,9 +57,6 @@ writeToPage(mainPage);
 
 // content.appendChild(writeToPage(navBar()))
 
-// content.appendChild(writeToPage(articleHeading()))
-// content.appendChild(writeToPage(article()))
-// content.appendChild(drawToPage(image()))
 
 
 
