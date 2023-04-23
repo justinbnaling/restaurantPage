@@ -33,9 +33,8 @@
 start of code
 
 */
-
+import {header} from './header';
 import {mainPage} from './mainPage';
-import { navBar } from './navBar';
 
 
 function writeToPage(component) {
@@ -51,7 +50,7 @@ function drawToPage(component){
     return element;    
 }
 
-
+writeToPage(header)
 writeToPage(mainPage);
 
 
