@@ -1,5 +1,5 @@
 import './mainPage.css'
-import articeImage from './articleImage.jpg';
+import articeImage from './images/articleImage.jpg'
 
 
 const mainPage = () => {
