@@ -1,3 +1,5 @@
+import './mainPage.css'
+
 const mainPage = () => {
     const container = document.createElement('div');
     container.classList.add("mainPage")
