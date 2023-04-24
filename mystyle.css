@@ -11,7 +11,6 @@ body {
 .header {
     display: flex;
     justify-content: space-around;
-    border: 1px black solid;
     align-items: center;
     gap: 10px;
     padding-left: 10px;
@@ -47,4 +46,32 @@ body {
 
 .logo img{
     width: 75px;
+}
+
+.mainPage {
+    display: flex; 
+    flex-direction: row;
+    padding: 50px 10px 10px 10px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.articleContainer{
+    width: 400px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.articleHeading {
+    font-size: 24px;
+}
+
+.articleBody {
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.mainPage img{
+    height: 400px;
 }
