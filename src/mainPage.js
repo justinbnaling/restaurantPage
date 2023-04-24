@@ -1,4 +1,6 @@
 import './mainPage.css'
+import articeImage from './articleImage.jpg';
+
 
 const mainPage = () => {
     const container = document.createElement('div');
@@ -28,11 +30,12 @@ const mainPage = () => {
     articleContainer.appendChild(articleHeading2)
     articleContainer.appendChild(article2)
 
-    const image = document.createElement("img")
-    image.src = "../images/pexels-yaroslav-shuraev-9631892.jpg"
-
     container.appendChild(articleContainer)
-    container.appendChild(image)
+
+    const myArticleImage = new Image();
+    myArticleImage.src = articeImage;
+
+    container.appendChild(myArticleImage);
 
     return container
 }
