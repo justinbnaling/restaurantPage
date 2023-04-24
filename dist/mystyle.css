@@ -10,12 +10,13 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border: 1px black solid;
     align-items: center;
-    height: 100px;
+    gap: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    flex-direction: column;
 }
 
 .navBar{
@@ -37,6 +38,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: #573280;
 }
 
 .logo .title{
