@@ -1,4 +1,4 @@
-import {header} from './header';
+import {header} from './header/header';
 import {mainPage} from './mainPage';
 
 

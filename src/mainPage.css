@@ -48,6 +48,10 @@ body {
     width: 75px;
 }
 
+/*
+mainpage css
+*/
+
 .mainPage {
     display: flex; 
     flex-direction: row;

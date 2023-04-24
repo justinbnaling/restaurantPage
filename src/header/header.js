@@ -1,4 +1,5 @@
-import icon from './images/icon.png'
+import './header.css'
+import icon from '../images/icon.png'
 
 const header = () => {
     const element = document.createElement('div');
@@ -11,13 +12,8 @@ const header = () => {
     title.textContent = "HuskyLand";
     title.classList.add("title")
 
-    // const image = document.createElement('img');
-    // image.src = "../images/husky-g9a4080289_1280.png";
-
     const myIcon = new Image();
     myIcon.src = icon;
-
-    // container.appendChild(myArticleImage);
     
     const title2 = document.createElement('div');
     title2.textContent = "Restaurant";
