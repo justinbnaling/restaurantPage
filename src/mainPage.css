@@ -7,51 +7,6 @@ body {
     background-color: #EFF8E2;
 }
 
-.header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-direction: column;
-}
-
-.navBar{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.navBar div{
-    border: 1px black solid;
-    border-radius: 10px;
-    height: 30px;
-    width: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #573280;
-}
-
-.logo .title{
-    font-size: 75px;
-}
-
-.logo img{
-    width: 75px;
-}
-
-/*
-mainpage css
-*/
-
 .mainPage {
     display: flex; 
     flex-direction: row;
