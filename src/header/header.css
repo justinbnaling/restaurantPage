@@ -38,3 +38,8 @@
 .logo img{
     width: 75px;
 }
+
+.navButton:hover{ 
+    cursor:pointer;
+    background-color: #ADA8B6;
+} 

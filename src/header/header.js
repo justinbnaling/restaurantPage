@@ -33,10 +33,13 @@ const header = () => {
 
     const home = document.createElement('div');
     home.textContent = "Home";
+    home.classList.add("navButton")
     const menu = document.createElement('div');
     menu.textContent = "Menu";
+    menu.classList.add("navButton")
     const content = document.createElement('div');
-    content.textContent = "Content";
+    content.textContent = "Content"
+    content.classList.add("navButton");
 
     navBar.appendChild(home)
     navBar.appendChild(menu)
