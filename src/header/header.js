@@ -34,16 +34,19 @@ const header = () => {
     const home = document.createElement('div');
     home.textContent = "Home";
     home.classList.add("navButton")
+    home.classList.add("home")
     const menu = document.createElement('div');
     menu.textContent = "Menu";
     menu.classList.add("navButton")
-    const content = document.createElement('div');
-    content.textContent = "Content"
-    content.classList.add("navButton");
+    menu.classList.add("menu")
+    const contact = document.createElement('div');
+    contact.textContent = "Contact"
+    contact.classList.add("navButton");
+    contact.classList.add("contact")
 
     navBar.appendChild(home)
     navBar.appendChild(menu)
-    navBar.appendChild(content)
+    navBar.appendChild(contact)
     element.appendChild(navBar)
 
     return element
