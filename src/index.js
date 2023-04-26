@@ -23,19 +23,21 @@ function loadPage(event){
         writeToPage(contact)
     }
 
+    addEvents();
+}
+
+function addEvents(){
     const navButtons = document.querySelectorAll(".navButton");
     navButtons.forEach(button=>{
         button.addEventListener("click", loadPage)
     })
 }
 
+function initialLoad(){
+    writeToPage(header)
+    writeToPage(mainPage)
+    addEvents();
+}
 
+initialLoad()
 
-writeToPage(header)
-writeToPage(mainPage)
-
-const navButtons = document.querySelectorAll(".navButton");
-
-navButtons.forEach(button=>{
-    button.addEventListener("click", loadPage)
-})
