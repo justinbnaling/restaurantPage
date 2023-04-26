@@ -12,9 +12,6 @@ function writeToPage(component) {
 function loadPage(event){
     content.innerHTML = ""
     writeToPage(header)
-
-    console.log("loadPage")
-    console.log(event.target.textContent)
     
     if (event.target.textContent == "Home"){
         writeToPage(mainPage)
@@ -26,14 +23,10 @@ function loadPage(event){
         writeToPage(contact)
     }
 
-    const homeButton = document.querySelector(".navButton.home")
-    homeButton.addEventListener("click", loadPage)
-
-    const menuButton = document.querySelector(".navButton.menu")
-    menuButton.addEventListener("click", loadPage)
-
-    const contactButton = document.querySelector(".navButton.contact")
-    contactButton.addEventListener("click", loadPage)
+    const navButtons = document.querySelectorAll(".navButton");
+    navButtons.forEach(button=>{
+        button.addEventListener("click", loadPage)
+    })
 }
 
 
@@ -41,11 +34,8 @@ function loadPage(event){
 writeToPage(header)
 writeToPage(mainPage)
 
-const homeButton = document.querySelector(".navButton.home")
-homeButton.addEventListener("click", loadPage)
+const navButtons = document.querySelectorAll(".navButton");
 
-const contactButton = document.querySelector(".navButton.contact")
-contactButton.addEventListener("click", loadPage)
-
-
-
+navButtons.forEach(button=>{
+    button.addEventListener("click", loadPage)
+})
