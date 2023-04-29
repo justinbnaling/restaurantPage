@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+}
+form {
+    display: flex; 
+    flex-direction: column;
+    width: 400px;
+}
+
+textarea,
+input {
+    margin-bottom: 10px;
+}
