@@ -19,7 +19,8 @@ const contact = () => {
     inputFullName.type = "text";
     inputFullName.name = "fullName";
     inputFullName.id = "fullName"
-    inputFullName.required = ""
+    inputFullName.required = true;       
+
 
     const labelEmail = document.createElement('label');
     labelEmail.textContent = "Email";
@@ -29,7 +30,7 @@ const contact = () => {
     inputEmail.type = "email";
     inputEmail.name = "email";
     inputEmail.id = "email"
-    inputEmail.required = ""
+    inputEmail.required = true;
 
     const labelMessage = document.createElement('label');
     labelMessage.textContent = "Message";
@@ -41,6 +42,14 @@ const contact = () => {
     inputMessage.required = ""
     inputMessage.cols = "20"
     inputMessage.rows = "10"
+    inputMessage.required = true;
+
+    
+    const BtnSubmit = document.createElement('input');
+    BtnSubmit.type = "submit"
+    BtnSubmit.value = "submit"
+    BtnSubmit.textContent = "Submit"
+
 
     
     contactForm.appendChild(labelFullName)
@@ -49,8 +58,10 @@ const contact = () => {
     contactForm.appendChild(inputEmail)
     contactForm.appendChild(labelMessage)
     contactForm.appendChild(inputMessage)
+    contactForm.appendChild(BtnSubmit)
 
     formContainer.appendChild(contactForm)
+
 
 
     container.appendChild(heading)
